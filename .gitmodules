@@ -1,0 +1,3 @@
+[submodule "rules/bre01"]
+	path = rules/bre01
+	url = https://github.com/sm0223/bre01.git
