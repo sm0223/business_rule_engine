@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bre"
+version = "0.1.0"
+description = "Project requiring pyDMNrules, flask, openpyxl, xsdata"
+requires-python = ">=3.8"
+dependencies = [
+  "pyDMNrules",
+  "Flask",
+  "openpyxl",
+  "xsdata",
+]
