@@ -1,0 +1,5 @@
+pyDMNrules
+Flask
+openpyxl
+xsdata
+dataclasses_json

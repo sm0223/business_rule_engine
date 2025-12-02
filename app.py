@@ -1,21 +1,22 @@
 # python
 from flask import Flask, request, jsonify
-from rules.bre01.flow import get_flow  # explicit, no discovery
+
+from rules.bre01.flow import Bre01Flow
 
 app = Flask(__name__)
+
+
 
 @app.route('/')
 def hello_world():
     return 'Hello World!'
 
-# instantiate flows manually
-bre01_flow = get_flow()
-
 @app.route('/bre01', methods=['POST'])
 def call_bre01():
     try:
         payload = request.get_json(force=True, silent=True) or {}
-        result = bre01_flow.execute(payload)
+        bre_flow = Bre01Flow()
+        result = bre_flow.execute(payload)
         return jsonify(result), 200
     except Exception as exc:
         app.logger.exception("bre01 flow failed")
