@@ -1,3 +1,4 @@
+dill
 pyDMNrules
 Flask
 openpyxl
