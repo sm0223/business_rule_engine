@@ -38,7 +38,7 @@ def get_logger(name: Optional[str] = None) -> Logger:
 # logger = get_logger(__name__)
 
 # example usage inside your function:
-# logger.info("Starting bre flow for %s", mpp.id)
+# logger.info("Starting policy_rules flow for %s", mpp.id)
 # logger.debug("Computed data: %s", data)
 # on exception:
 # logger.exception("bre_flow failed")

@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 import dill
@@ -42,6 +43,7 @@ def years_difference(date1, date2):
     return years
 
 def get_dmn_from_pkl(file_path):
+    print(os.getcwd())
     try:
         with open(file_path, 'rb') as f:
             dmn_object = dill.load(f)

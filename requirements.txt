@@ -1,6 +1,7 @@
+pytest
 dill
 pyDMNrules
-Flask
+flask
 openpyxl
 xsdata
 dataclasses_json
